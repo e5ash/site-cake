@@ -1,0 +1,51 @@
+@-webkit-keyframes cake1{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-webkit-transform:translate(2px, -5px);}
+to {-webkit-transform: translate(0, 0px);opacity: 1;}}
+@-moz-keyframes cake1{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-moz-transform:translate(2px, -5px);}
+to {-moz-transform: translate(0, 0px);opacity: 1;}}
+@-o-keyframes cake1{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-o-transform:translate(2px, -5px);}
+to {-o-transform: translate(0, 0px);opacity: 1;}}
+@keyframes cake1{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {transform:translate(2px, -5px);}
+to {transform: translate(0, 0px);opacity: 1;}}
+
+@-webkit-keyframes cake2{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-webkit-transform:translate(4px, -6px);}
+to {-webkit-transform: translate(0, 0px);opacity: 1;}}
+@-moz-keyframes cake2{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-moz-transform:translate(4px, -6px);}
+to {-moz-transform: translate(0, 0px);opacity: 1;}}
+@-o-keyframes cake2{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-o-transform:translate(4px, -6px);}
+to {-o-transform: translate(0, 0px);opacity: 1;}}
+@keyframes cake2{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {transform:translate(4px, -6px);}
+to {transform: translate(0, 0px);opacity: 1;}}
+
+@-webkit-keyframes cake3{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-webkit-transform:translate(5px, -5px);}
+to {-webkit-transform: translate(0, 0px);opacity: 1;}}
+@-moz-keyframes cake3{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-moz-transform:translate(5px, -5px);}
+to {-moz-transform: translate(0, 0px);opacity: 1;}}
+@-o-keyframes cake3{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-o-transform:translate(5px, -5px);}
+to {-o-transform: translate(0, 0px);opacity: 1;}}
+@keyframes cake3{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {transform:translate(5px, -5px);}
+to {transform: translate(0, 0px);opacity: 1;}}
+
+@-webkit-keyframes cake4{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-webkit-transform:translate(4px, 5px);}
+to {-webkit-transform: translate(0, 0px);opacity: 1;}}
+@-moz-keyframes cake4{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-moz-transform:translate(4px, 5px);}
+to {-moz-transform: translate(0, 0px);opacity: 1;}}
+@-o-keyframes cake4{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {-o-transform:translate(4px, 5px);}
+to {-o-transform: translate(0, 0px);opacity: 1;}}
+@keyframes cake4{from {-webkit-transform:translate(0px, 0px); opacity: 1;}
+50% {transform:translate(4px, 5px);}
+to {transform: translate(0, 0px);opacity: 1;}}
