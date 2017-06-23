@@ -67,7 +67,7 @@ input.input
 		padding-left: 20px
 		padding-right: 20px
 ::placeholder
-	color: #422d04
+	color: rgba(66,45,4, .5)
 
 
 
@@ -104,6 +104,115 @@ input.input
 		&:hover
 			background: linear-gradient(to top, #d6f7f9 0%,#83d9d2 100%)
 			border-bottom: 2px solid #83d9d2
+
+
+
+.textarea
+	display: block
+	width: 100%
+	height: 108px
+	box-shadow: inset 1px 2px 1px rgba(66, 45, 4, 0.54)
+	border-radius: 40px
+	border: 1px solid #81d8d0
+	background-color: #ffffff
+	padding: 19px 17px
+	font-family: Georgia
+	font-size: 16px
+	outline: none
+	resize: none
+	overflow: hidden
+
+
+
+
+.select
+	position: relative
+	width: 183px
+	&.select_open
+		.select__title
+			&:after
+				transform: rotate(180deg)
+		.select__list
+			display: block
+	::-webkit-scrollbar
+		width: 7px
+		background: transparent
+
+	::-webkit-scrollbar-thumb
+		background: gray
+
+.select__title
+	padding: 0 21px
+	width: 100%
+	height: 43px
+	line-height: 43px
+	box-sizing: border-box
+	cursor: pointer
+	border: 1px solid #81d8d0
+	box-shadow: inset 1px 2px 1px rgba(66, 45, 4, 0.54)
+	background-color: #ffffff
+	border-radius: 21px
+	font-family: Georgia
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		width: 38px
+		height: 43px
+		background: linear-gradient(to bottom, #d6f7f9 0%,#83d9d2 100%)
+		border-radius: 0 25px 25px 0
+	&:after
+		content: ''
+		position: absolute
+		top: 18px
+		right: 12px
+		width: 0
+		height: 0
+		@include sprite($arrow)
+		transition: .3s
+
+
+.select__list
+	display: none
+	z-index: 1
+	position: absolute
+	top: 104%
+	left: 0
+	width: 100%
+	max-height: 110px
+	overflow-y: auto
+	border: 1px solid #81d8d0
+	box-shadow: inset 1px 1px 1px rgba(66, 45, 4, 0.54)
+	background-color: #ffffff
+	border-radius: 10px
+	font-family: Georgia
+
+
+.select__list-item
+	display: block
+	padding: 4px 10px
+	cursor: pointer
+	transition: .3s
+	&:hover
+		background: #d6f7f9
+
+.select__parsing
+	display: none
+
+@media screen and (max-width: 768px)
+	.select__list
+		position: relative
+		top: -1px
+
+
+
+
+
+
+
+
+
 
 
 .popup
@@ -582,13 +691,323 @@ img
 
 
 
+.order
+	&__table
+		margin-top: 30px
+		margin-bottom: 14px
+		table
+			border-collapse: collapse
+			width: 100%
+		td
+			padding-top: 20px
+			padding-bottom: 20px
+			&:nth-of-type(1)
+				width: 13%
+			&:nth-of-type(2)
+				width: 50%
+			&:nth-of-type(3)
+				width: 21%
+			&:nth-of-type(4)
+		tr
+			background: url('../img/bg/lines/1.png') repeat-x center bottom
+
+
+
+	&__img
+		padding-top: 15px
+		padding-bottom: 15px
+		border: 1px solid #F7D051
+		width: 90px
+		border-radius: 20px
+		img
+			display: block
+			border-top: 2px solid #F7D051
+			border-bottom: 2px solid #F7D051
+			margin-left: auto
+			margin-right: auto
+			max-width: 88px
+			width: 100%
+
+
+	&__name
+		font-size: 20px
+		margin-bottom: 10px
+	&__desc
+		font-family: Georgia
+
+	&__price
+		width: 224px
+		height: 43px
+		line-height: 43px
+		border-radius: 18px
+		background-color: #f7d051
+		padding-left: 19px
+		padding-right: 17px
+		p
+			display: inline-block
+			font-size: 20px
+		i
+			float: right
+			margin-top: 10px
+			cursor: pointer
+	&__sum
+		text-align: right
+		margin-bottom: 25px
+		.sum__name
+			margin-right: 53px
+
+.order__sum-final
+	margin-top: 56px
+	line-height: 43px
+	.sum__count
+		margin-left: 12px
+.sum
+	text-align: right
+	&__name, &__count
+		display: inline-block
+		vertical-align: middle
+		line-height: 30px
+	&__name
+		font-size: 20px
+	&__count
+		font-size: 30px
+	.button
+		width: 225px
+		height: 43px
+		margin-left: 21px
+
+
+
+
+
+.book
+	font-family: Georgia
+	&__title
+		font-size: 30px
+		margin-bottom: 45px
+
+	&__left
+		padding-right: 15px
+
+	&__right
+		padding-left: 15px
+	.line
+		margin-bottom: 20px
+		&_all
+			p
+				width: 100% !important
+				margin-bottom: 17px
+		&:last-of-type
+			margin-bottom: 0
+		p
+			width: 160px
+			display: inline-block
+			vertical-align: middle
+	.input, .select
+		width: 301px
+	.select
+		display: inline-block
+		&__title
+			width: 100% !important
+	
+	.requred-text
+		text-align: right
+
+
+.product
+	margin-top: 49px
+	::placeholder
+		color: $color-1
+	&__img
+		width: 352px
+		border: 1px solid #F7D051
+		padding-top: 17px
+		padding-bottom: 17px
+		border-radius: 20px
+		.img
+			width: 350px
+			height: 319px
+			background: #CDCDCD
+			border-top: 1px solid #F7D051
+			border-bottom: 1px solid #F7D051
+		img
+			display: inline-block
+			max-width: 350px
+			vertical-align: middle
+		
+	&__data
+		width: 600px
+		float: right
+	&__system
+		margin-top: -8px
+		margin-bottom: 30px
+	&__title
+		font-size: 30px
+
+	&__count
+		float: right
+		width: 169px
+		line-height: 40px
+		color: #422d04
+		font-size: 20px
+		font-weight: 400
+		background: #F7D150
+		text-align: center
+		border-radius: 20px
+	
+	&__settings
+		width: 345px
+		font-family: Georgia
+
+	&__line
+		margin-bottom: 20px
+		&_full
+			.select, .input
+				width: 100%
+		&_size
+			p, .select
+				display: inline-block
+			.select
+				width: 223px
+				margin-left: 27px
+		&_file
+			p
+				display: inline-block
+				margin-right: 31px
+				padding-top: 3px
+	&__icons
+		float: right
+		width: 200px
+		padding-top: 16px
+		font-family: Georgia
+		text-align: center
+		font-size: 13px
+		.img
+			height: 39px
+			line-height: 39px
+			margin-bottom: 18px
+			img
+				display: inline-block
+				vertical-align: middle
+
+		.row
+			&:first-of-type
+				margin-bottom: 37px
+		.col
+			&:first-of-type
+				padding-right: 10px
+			&:last-of-type
+				padding-left: 10px
+
+	&__price
+		line-height: 40px
+		.sum__name
+			margin-right: 50px
+		.button
+			font-size: 20px
+			margin-left: 32px
+
+
+
+
+	&__text
+		margin-bottom: 49px
+		&:before
+			content: ''
+			display: block
+			position: relative
+			width: 100%
+			height: 5px
+			margin-top: 23px
+			margin-bottom: 15px
+			background: url('../img/bg/lines/1.png')
+
+		h2
+			font-size: 20px
+			margin-bottom: 12px
+
+		p
+			font-family: Georgia
+			line-height: 20px
+			text-align: justify
+	
+.slider
+	&__title
+		text-align: center
+		font-size: 30px
+		margin-bottom: 24px
+		p
+			display: inline-block
+			vertical-align: top
+	&__arrows
+		display: inline-block
+		vertical-align: top
+		padding-top: 8px
+		margin-left: 25px
+		.slick-arrow
+			display: inline-block
+			position: relative
+			left: auto
+			right: auto
+			top: auto
+			vertical-align: bottom
+			transition: opacity .3s
+			&:hover
+				opacity: .5
+			&:before
+				display: none
+		.slick-prev
+			@include sprite($arrow-left)
+			margin-right: 14px
+			position: relative
+			&:after
+				position: absolute
+				content: ''
+				height: 28px
+				border-right: 1px dotted
+				color: $color-1
+				right: -15px
+				top: 0
+		.slick-next
+			@include sprite($arrow-right)
+			margin-left: 15px
+	&__list
+		padding-left: 16px
+		padding-right: 16px
+
+	&__item
+		font-family: Georgia
+		font-size: 15px
+		text-align: center
+		border: 1px solid #f7d051
+		padding-top: 12px
+		padding-bottom: 12px
+		border-radius: 20px
+		margin-left: 16px
+		margin-right: 16px
+		p
+			padding: 10px 5px 0
+	&__img
+		display: block
+		width: 156px
+		height: 178px
+		line-height: 171px
+		border-top: 2px solid #f7d051
+		border-bottom: 2px solid #f7d051
+		img
+			max-width: 156px
+			max-height: 175px
+			width: 100%
+			display: inline-block
+			vertical-align: middle
 
 
 
 
 
 
-
+span.color-red
+	color: #ae1010
 
 
 
@@ -900,7 +1319,6 @@ img
 
 
 .reviews
-	padding-bottom: 40px
 	.slick-arrow
 		opacity: 1 !important
 		// z-index: 1010 !important
@@ -977,7 +1395,10 @@ img
 .footer
 	padding-top: 42px
 	padding-bottom: 30px
+	margin-top: 60px
 	background: url('../img/bg/footer.png') repeat-x center top
+	::placeholder
+		color: $color-1
 	.row
 		> .col
 			height: 353px
