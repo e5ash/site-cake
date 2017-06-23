@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		
+		<link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="template/styles/libs.min.css" />
+		<link rel="stylesheet" href="template/styles/style.css" />
+		<link rel="stylesheet" href="template/styles/responsive.css" />
+		<script src="template/scripts/libs.min.js"></script>
+		<script src="template/scripts/scripts.js"></script>
+	</head>
+	<body>
+		<div class="popup" id="callback">
+			<button data-fancybox-close="" class="popup__close"><i class="icon icon-close"></i></button>
+			<div class="popup__title">Заказать звонок</div>
+			<input type="text" class="input input-default" placeholder="Введите ваше имя:...">
+			<input type="text" class="input input-default input-phone" placeholder="Введите номер телефона:...">
+			<button class="button button_blue">Отправить</button>
+			<div class="popup__desc">С вами свяжутся в ближайшее время</div>
+		</div>
+		<div class="popup" id="thanks">
+			<button data-fancybox-close="" class="popup__close"><i class="icon icon-close"></i></button>
+			<div class="popup__title">Спасибо!</div>
+			<div class="popup__desc">Ваш заказ принят, с вами свяжутся в ближайшее время</div>
+		</div>
+		<div class="cart">
+			<div class="cart__count">0</div>
+			<div class="cart__sum"><span>0</span> рублей</div>
+		</div>
+		<div class="header">
+			<div class="container row w3">
+				<div class="header__sn-search col">
+					<div class="sn">
+						<div class="sn__title">Мы в социальных сетях</div>
+						<ul>
+							<li><a href="" class="icon icon-vk" target="_blank"></a></li>
+							<li><a href="" class="icon icon-insta" target="_blank"></a></li>
+							<li><a href="" class="icon icon-youtube" target="_blank"></a></li>
+						</ul>
+					</div>
+					<div class="search-block">
+						<input type="text" class="search-block__input input" placeholder="Вкусный торт..."><button class="search-block__button"><i class="icon icon-search"></i></button>
+					</div>
+				</div>
+				<div class="header__logo col"><a href="/"><img src="upload/logo/logo-1.png" alt=""></a></div>
+				<div class="contacts-block col">
+					<div class="phone"><i class="icon icon-phone"></i><a href="tel:+7 495 125 58 58">+7 495 125 58 58</a></div>
+					<div class="phone"><i class="icon icon-phone"></i><a href="tel:+7 495 125 58 58">+7 495 125 58 58</a></div>
+					<a data-fancybox data-src="#callback" href="javascript:;" class="button button_yellow">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="container">
+				<ul>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Торты</a></li>
+					<li><a href="">Начинки</a></li>
+					<li><a href="">Отзывы</a></li>
+					<li><a href="">Контакты</a></li>
+					<li class="nav__item_select"><a href="">Заказать торт</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="page container">
+				<h1 class="page__title">Детские торты</h1>
+				<div class="breadcrumbs nav-buttons">
+					<ul>
+						<li><a href="">Главная</a></li>
+						<li><a href="">Каталог тортов</a></li>
+						<li><span>Детские торты</span></li>
+					</ul>
+				</div>
+				<div class="sort nav-buttons">
+					<div class="sort__title">Сортировать по:</div>
+					<ul>
+						<li class="item_select"><a href="">Цене</a></li>
+						<li><a href="">Размерам</a></li>
+						<li><a href="">Ещё раздел</a></li>
+					</ul>
+				</div>
+				<div class="catalog">
+					<div class="row w4">
+						<div class="col">
+							<a href="" class="catalog__item">
+								<div class="catalog__img"><img src="upload/product.png" alt=""></div>
+								<div class="catalog__title">Торты для мальчиков</div>
+							</a>
+						</div>
+						<div class="col">
+							<a href="" class="catalog__item">
+								<div class="catalog__img"><img src="upload/product.png" alt=""></div>
+								<div class="catalog__title">Торты для девочек</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="products">
+					<div class="products__list">
+						<div class="row w4">
+							<div class="col">
+								<div class="products__item">
+									<div class="products__img"><img src="upload/product.png" alt=""></div>
+									<div class="products__title"><a href="">Торт с розочками</a></div>
+									<div class="products__data">
+										<span class="products__price">750 р.</span>
+										<span class="products__weight">за 1 кг</span>
+										<button class="products__button"><i class="icon icon-cart"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="products__item">
+									<div class="products__img"><img src="upload/product.png" alt=""></div>
+									<div class="products__title"><a href="">Торт с розочками</a></div>
+									<div class="products__data">
+										<span class="products__price">750 р.</span>
+										<span class="products__weight">за 1 кг</span>
+										<button class="products__button"><i class="icon icon-cart"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="products__item">
+									<div class="products__img"><img src="upload/product.png" alt=""></div>
+									<div class="products__title"><a href="">Торт с розочками</a></div>
+									<div class="products__data">
+										<span class="products__price">750 р.</span>
+										<span class="products__weight">за 1 кг</span>
+										<button class="products__button"><i class="icon icon-cart"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="products__item">
+									<div class="products__img"><img src="upload/product.png" alt=""></div>
+									<div class="products__title"><a href="">Торт с розочками</a></div>
+									<div class="products__data">
+										<span class="products__price">750 р.</span>
+										<span class="products__weight">за 1 кг</span>
+										<button class="products__button"><i class="icon icon-cart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row w4">
+							<div class="col">
+								<div class="products__item">
+									<div class="products__img"><img src="upload/product.png" alt=""></div>
+									<div class="products__title"><a href="">Торт с розочками</a></div>
+									<div class="products__data">
+										<span class="products__price">750 р.</span>
+										<span class="products__weight">за 1 кг</span>
+										<button class="products__button"><i class="icon icon-cart"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="products__item">
+									<div class="products__img"><img src="upload/product.png" alt=""></div>
+									<div class="products__title"><a href="">Торт с розочками</a></div>
+									<div class="products__data">
+										<span class="products__price">750 р.</span>
+										<span class="products__weight">за 1 кг</span>
+										<button class="products__button"><i class="icon icon-cart"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="products__item">
+									<div class="products__img"><img src="upload/product.png" alt=""></div>
+									<div class="products__title"><a href="">Торт с розочками</a></div>
+									<div class="products__data">
+										<span class="products__price">750 р.</span>
+										<span class="products__weight">за 1 кг</span>
+										<button class="products__button"><i class="icon icon-cart"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="products__item">
+									<div class="products__img"><img src="upload/product.png" alt=""></div>
+									<div class="products__title"><a href="">Торт с розочками</a></div>
+									<div class="products__data">
+										<span class="products__price">750 р.</span>
+										<span class="products__weight">за 1 кг</span>
+										<button class="products__button"><i class="icon icon-cart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pagination">
+						<ul>
+							<li><a href="">Назад</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li class="item_select"><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">Вперёд</a></li>
+						</ul>
+					</div>
+					<div class="text">
+						<div class="text__title">Текст для сео</div>
+						<p>Пока лепешки для торта "Опавшие листья" остывают, приготовить сметанный крем: сметана должна быть максимально жирная и густая. Если сметана жидковатая - лучше отвесить ее на ночь в марлевом мешке из 3-4 слоев марли, чтобы стекла лишняя сыворотка. Взбить сметану миксером, постепенно добавляя сахар с какао-порошком, после этого взбивать на высокой скорости до пышности.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container row">
+				<div class="footer__system col">
+					<div class="footer__logo"><a href="/"><img src="upload/logo/logo-2.png" alt=""></a></div>
+					<div class="footer__copy">Торт-престиж<br />© 2014-2017</div>
+					<div class="footer__certificates">
+						<div class="footer__title">Наши сертификаты</div>
+						<a href="upload/certificates/1.png" data-fancybox="certificates"><img src="upload/certificates/1.png" alt=""></a><a href="upload/certificates/1.png" data-fancybox="certificates"><img src="upload/certificates/1.png" alt=""></a>
+					</div>
+				</div>
+				<div class="footer__nav col">
+					<div class="footer__title">Наши услуги</div>
+					<ul>
+						<li><a href="">Свадебные торты</a></li>
+						<li><a href="">Торты без мастики</a></li>
+						<li><a href="">Фото торты</a></li>
+						<li><a href="">Торты для девочек</a></li>
+						<li><a href="">Торты для мальчиков</a></li>
+						<li><a href="">Торты для женщин</a></li>
+						<li><a href="">Сладкие капейки</a></li>
+						<li><a href="">Кенди-бар</a></li>
+					</ul>
+				</div>
+				<div class="footer__contacts col">
+					<div class="footer__title">Наши контакты</div>
+					<div class="footer__contacts-block contacts-block">
+						<div class="phone"><i class="icon icon-phone"></i><a href="tel:+7 495 125 58 58">+7 495 125 58 58</a></div>
+						<div class="phone"><i class="icon icon-phone"></i><a href="tel:+7 495 125 58 58">+7 495 125 58 58</a></div>
+						<div class="email"><i class="icon icon-email"></i><a href="mailto:info@tort-prestige.ru">info@tort-prestige.ru</a></div>
+						<div class="button button_blue">Заказать звонок</div>
+					</div>
+				</div>
+				<div class="footer__order col">
+					<div class="footer__title-big"><span>Закажи сейчас</span> и  получи скидку</div>
+					<input type="text" class="input input-default" placeholder="Ваше имя:">
+					<input type="text" class="input input-default input-phone" placeholder="Ваш телефон:">
+					<button class="button button_blue">Отправить</button>
+					<a href="#" class="dev"><p>Сайт создан студией<p><i class="icon icon-dev"></i></a>
+				</div>
+			</div>
+		</div>
+		<div id="go-up"><svg xmlns="http://www.w3.org/2000/svg" width="57" height="34" viewBox="0 0 57 34"><defs><filter id="a" width="200%" height="200%" x="-50%" y="-50%"><feMorphology in="SourceGraphic" operator="dilate" result="SvgjsFeMorphology1010Out"/><feOffset dy="1" in="SvgjsFeMorphology1010Out" result="SvgjsFeOffset1011Out"/><feGaussianBlur in="SvgjsFeOffset1011Out" result="SvgjsFeGaussianBlur1012Out"/><feComposite in="SvgjsFeGaussianBlur1012Out" in2="SourceAlpha" operator="out" result="SvgjsFeComposite1013Out"/></filter></defs><path fill="#1a6a63" fill-opacity=".6" d="M1583.87 4362.33l-23.41 22.35a4.58 4.58 0 0 0 0 6.7 5.12 5.12 0 0 0 7.01 0l19.91-19.01 20.04 19.14a5.12 5.12 0 0 0 7.01 0 4.57 4.57 0 0 0 0-6.69l-23.41-22.35a.27.27 0 0 0-.08-.07l-.06-.07a5.12 5.12 0 0 0-7.01 0z" filter="url(#a)" transform="translate(-1559 -4360)"/><path fill="#fff" d="M24.87 2.33L1.46 24.68a4.58 4.58 0 0 0 0 6.7 5.12 5.12 0 0 0 7.01 0l19.91-19.01 20.04 19.14a5.12 5.12 0 0 0 7.01 0 4.57 4.57 0 0 0 0-6.69L32.02 2.47a.27.27 0 0 0-.08-.07l-.06-.07a5.12 5.12 0 0 0-7.01 0z"/></svg><p>Наверх</p></div>
+	</body>
+</html>

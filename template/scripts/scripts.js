@@ -40,4 +40,14 @@ $(document).ready(function($) {
 			}, delay);
 		});
 	});
+
+
+
+	$('.popup .button').click(function() {
+		parent.jQuery.fancybox.getInstance().close();
+		$.fancybox.open({
+			src  : '#thanks',
+			type : 'inline'
+		});
+	});
 });

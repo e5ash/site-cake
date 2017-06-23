@@ -13,6 +13,19 @@
 		<script src="template/scripts/scripts.js"></script>
 	</head>
 	<body>
+		<div class="popup" id="callback">
+			<button data-fancybox-close="" class="popup__close"><i class="icon icon-close"></i></button>
+			<div class="popup__title">Заказать звонок</div>
+			<input type="text" class="input input-default" placeholder="Введите ваше имя:...">
+			<input type="text" class="input input-default input-phone" placeholder="Введите номер телефона:...">
+			<button class="button button_blue">Отправить</button>
+			<div class="popup__desc">С вами свяжутся в ближайшее время</div>
+		</div>
+		<div class="popup" id="thanks">
+			<button data-fancybox-close="" class="popup__close"><i class="icon icon-close"></i></button>
+			<div class="popup__title">Спасибо!</div>
+			<div class="popup__desc">Ваш заказ принят, с вами свяжутся в ближайшее время</div>
+		</div>
 		<div class="cart">
 			<div class="cart__count">0</div>
 			<div class="cart__sum"><span>0</span> рублей</div>
@@ -36,7 +49,7 @@
 				<div class="contacts-block col">
 					<div class="phone"><i class="icon icon-phone"></i><a href="tel:+7 495 125 58 58">+7 495 125 58 58</a></div>
 					<div class="phone"><i class="icon icon-phone"></i><a href="tel:+7 495 125 58 58">+7 495 125 58 58</a></div>
-					<div class="button button_yellow">Заказать звонок</div>
+					<a data-fancybox data-src="#callback" href="javascript:;" class="button button_yellow">Заказать звонок</a>
 				</div>
 			</div>
 		</div>
@@ -115,17 +128,17 @@
 					</div>
 				</div>
 			</div>
-			<div class="order">
+			<div class="order-block">
 				<div class="container">
-					<div class="order__title title">Индивидуальный заказ</div>
-					<div class="order__desc">Текст рыба закажи торт который ты хочешь  на свой вкус и размер любое твоё жилание</div>
-					<div class="order__elements">
+					<div class="order-block__title title">Индивидуальный заказ</div>
+					<div class="order-block__desc">Текст рыба закажи торт который ты хочешь  на свой вкус и размер любое твоё жилание</div>
+					<div class="order-block__elements">
 						<input type="text" class="input input-default" placeholder="Ваше имя:">
 						<input type="text" class="input input-default" placeholder="Ваш телефон:">
 						<input type="text" class="input input-default" placeholder="Email:">
 						<div class="file">
-							<input type="file" id="order-file">
-							<label for="order-file">Загрузи фото</label>
+							<input type="file" id="order-block-file">
+							<label for="order-block-file">Загрузи фото</label>
 						</div>
 						<button class="button button_blue">Отправить</button>
 					</div>
