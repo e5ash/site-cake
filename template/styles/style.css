@@ -392,11 +392,6 @@ input.input {
 .select__parsing {
   display: none; }
 
-@media screen and (max-width: 768px) {
-  .select__list {
-    position: relative;
-    top: -1px; } }
-
 .popup {
   display: none;
   width: 534px;
@@ -450,10 +445,12 @@ input.input {
   position: fixed;
   width: 323px;
   height: 279px;
-  background: url("../img/bg/cart.png");
+  background: url("../img/bg/cart.png") no-repeat left top;
   font-family: Georgia;
   -webkit-border-radius: 40px;
           border-radius: 40px; }
+  .cart__name {
+    display: none; }
   .cart__count {
     position: absolute;
     color: white;
@@ -461,6 +458,8 @@ input.input {
     left: 37px;
     width: 30px;
     text-align: center; }
+    .cart__count span {
+      display: none; }
   .cart__sum {
     position: absolute;
     color: #81d8d0;
@@ -588,6 +587,8 @@ img {
         display: none !important; }
     .nav_fixed + .main {
       margin-top: 60px; }
+  .nav__button {
+    display: none; }
   .nav ul {
     position: relative;
     text-align: center;
@@ -1188,6 +1189,8 @@ span.color-red {
   height: 386px;
   position: relative;
   margin-bottom: 31px; }
+  .services-blur img + span {
+    display: none; }
   .services-blur:after {
     content: '';
     position: absolute;
@@ -1199,6 +1202,7 @@ span.color-red {
     margin-right: auto;
     bottom: 0; }
   .services-blur__item {
+    position: relative;
     display: block;
     position: absolute;
     -webkit-filter: blur(3px);
@@ -1211,6 +1215,7 @@ span.color-red {
       content: '';
       position: absolute; }
     .services-blur__item:hover {
+      z-index: 4;
       -webkit-filter: blur(0px);
               filter: blur(0px);
       -webkit-animation: none !important;
@@ -1218,6 +1223,11 @@ span.color-red {
       .services-blur__item:hover:before {
         z-index: 1;
         opacity: 1; }
+      .services-blur__item:hover a {
+        opacity: 1; }
+    .services-blur__item a {
+      opacity: 0;
+      position: absolute; }
   .services-blur__item-1 {
     top: 85px;
     left: 19px;
@@ -1231,6 +1241,9 @@ span.color-red {
       height: 40px;
       top: -22px;
       right: 57px; }
+    .services-blur__item-1 a {
+      right: -170px;
+      top: 0; }
   .services-blur__item-2 {
     top: 179px;
     left: 271px;
@@ -1244,6 +1257,9 @@ span.color-red {
       height: 86px;
       bottom: 10px;
       left: -10px; }
+    .services-blur__item-2 a {
+      left: -200px;
+      bottom: 120px; }
   .services-blur__item-3 {
     top: 38px;
     left: 437px;
@@ -1257,6 +1273,9 @@ span.color-red {
       height: 42px;
       bottom: -40px;
       left: 13px; }
+    .services-blur__item-3 a {
+      right: -200px;
+      top: 10px; }
   .services-blur__item-4 {
     top: 52px;
     right: 40px;
@@ -1270,6 +1289,9 @@ span.color-red {
       height: 49px;
       left: 120px;
       top: -27px; }
+    .services-blur__item-4 a {
+      left: -200px;
+      bottom: 150px; }
 
 .services {
   text-align: center; }

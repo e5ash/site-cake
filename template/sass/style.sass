@@ -200,11 +200,6 @@ input.input
 .select__parsing
 	display: none
 
-@media screen and (max-width: 768px)
-	.select__list
-		position: relative
-		top: -1px
-
 
 
 
@@ -264,9 +259,11 @@ input.input
 	position: fixed
 	width: 323px
 	height: 279px
-	background: url('../img/bg/cart.png')
+	background: url('../img/bg/cart.png') no-repeat left top
 	font-family: Georgia
 	border-radius: 40px
+	&__name
+		display: none
 	&__count
 		position: absolute
 		color: white
@@ -274,6 +271,8 @@ input.input
 		left: 37px
 		width: 30px
 		text-align: center
+		span
+			display: none
 	&__sum
 		position: absolute
 		color: #81d8d0
@@ -395,6 +394,8 @@ img
 				display: none !important
 		+ .main
 			margin-top: 60px
+	&__button
+		display: none
 	ul
 		position: relative
 		text-align: center
@@ -1044,6 +1045,9 @@ span.color-red
 	height: 386px
 	position: relative
 	margin-bottom: 31px
+	img
+		+ span
+			display: none
 	&:after
 		content: ''
 		position: absolute
@@ -1055,6 +1059,7 @@ span.color-red
 		margin-right: auto
 		bottom: 0
 	&__item
+		position: relative
 		display: block
 		position: absolute
 		filter: blur(3px)
@@ -1065,11 +1070,17 @@ span.color-red
 			content: ''
 			position: absolute
 		&:hover
+			z-index: 4
 			filter: blur(0px)
 			animation: none !important
 			&:before
 				z-index: 1
 				opacity: 1
+			a
+				opacity: 1
+		a
+			opacity: 0
+			position: absolute
 	&__item-1
 		top: 85px
 		left: 19px
@@ -1081,6 +1092,9 @@ span.color-red
 			height: 40px
 			top: -22px
 			right: 57px
+		a
+			right: -170px
+			top: 0
 	&__item-2
 		top: 179px
 		left: (256px + 15px)
@@ -1092,6 +1106,9 @@ span.color-red
 			height: 86px
 			bottom: 10px
 			left: -10px
+		a
+			left: -200px
+			bottom: 120px
 	&__item-3
 		top: 38px
 		left: (422px + 15px)
@@ -1103,6 +1120,9 @@ span.color-red
 			height: 42px
 			bottom: -40px
 			left: 13px
+		a
+			right: -200px
+			top: 10px
 	&__item-4
 		top: 52px
 		right: (25px + 15px)
@@ -1114,6 +1134,9 @@ span.color-red
 			height: 49px
 			left: 120px
 			top: -27px
+		a
+			left: -200px
+			bottom: 150px
 
 .services
 	text-align: center

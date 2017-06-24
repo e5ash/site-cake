@@ -9,8 +9,17 @@ $(document).ready(function($) {
 
 	$('.slider__list').slick({
 		slidesToShow: 5,
-		appendArrows: $('.slider__arrows')
-		// centerPadding: '60px',
+		appendArrows: $('.slider__arrows'),
+		responsive: [{
+
+      breakpoint: 1040,
+      settings: {
+        slidesToShow: 1,
+        variableWidth: true,
+        centerMode: true
+      }
+
+	    }]
 	});
 
 
@@ -23,10 +32,8 @@ $(document).ready(function($) {
 		navHeight = nav.height(),
 		navSum = navPosition + navHeight;
 
-	console.log(navSum);
 	$(window).scroll(function(event) {
 		var scrollTop = $(window).scrollTop();
-		console.log
 		if (scrollTop > navPosition) {
 			nav.addClass(navClassFixed);
 		} else {
@@ -117,8 +124,14 @@ $(document).ready(function($) {
 	select = null;
 
 
+	var navButton = $('.nav__button'),
+		navButtonName = 'nav__button_toggle',
+		navList = $('.nav ul');
 
-
+	navButton.click(function() {
+		$(this).toggleClass(navButtonName);
+		navList.slideToggle(0);
+	});
 
 
 });

@@ -26,10 +26,6 @@
 			<div class="popup__title">Спасибо!</div>
 			<div class="popup__desc">Ваш заказ принят, с вами свяжутся в ближайшее время</div>
 		</div>
-		<div class="cart">
-			<div class="cart__count">0</div>
-			<div class="cart__sum"><span>0</span> рублей</div>
-		</div>
 		<div class="header">
 			<div class="container row w3">
 				<div class="header__sn-search col">
@@ -45,7 +41,14 @@
 						<input type="text" class="search-block__input input" placeholder="Вкусный торт..."><button class="search-block__button"><i class="icon icon-search"></i></button>
 					</div>
 				</div>
-				<div class="header__logo col"><a href="/"><img src="upload/logo/logo-1.png" alt=""></a></div>
+				<div class="header__logo col">
+					<a href="/"><img src="upload/logo/logo-1.png" alt=""></a>
+					<div class="cart">
+						<div class="cart__name">Корзина: </div>
+						<div class="cart__count">0 <span>товаров</span></div>
+						<div class="cart__sum"><span>0</span> рублей</div>
+					</div>
+				</div>
 				<div class="contacts-block col">
 					<div class="phone"><i class="icon icon-phone"></i><a href="tel:+7 495 125 58 58">+7 495 125 58 58</a></div>
 					<div class="phone"><i class="icon icon-phone"></i><a href="tel:+7 495 125 58 58">+7 495 125 58 58</a></div>
@@ -55,6 +58,11 @@
 		</div>
 		<div class="nav">
 			<div class="container">
+				<div class="nav__button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<ul>
 					<li><a href="">Главная</a></li>
 					<li><a href="">Торты</a></li>
@@ -197,7 +205,7 @@
 						<div class="phone"><i class="icon icon-phone"></i><a href="tel:+7 495 125 58 58">+7 495 125 58 58</a></div>
 						<div class="phone"><i class="icon icon-phone"></i><a href="tel:+7 495 125 58 58">+7 495 125 58 58</a></div>
 						<div class="email"><i class="icon icon-email"></i><a href="mailto:info@tort-prestige.ru">info@tort-prestige.ru</a></div>
-						<div class="button button_blue">Заказать звонок</div>
+						<a data-fancybox data-src="#callback" href="javascript:;" class="button button_blue">Заказать звонок</a>
 					</div>
 				</div>
 				<div class="footer__order col">
